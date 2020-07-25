@@ -236,6 +236,7 @@ html, body {
 }
 @media only screen and (min-width: 768px) {
   .cd-header {
+    top: 0;
     height: 80px;
     background: transparent;
     box-shadow: none;
