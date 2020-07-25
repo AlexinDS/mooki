@@ -1,0 +1,15 @@
+<div class="bar"></div>
+
+{% extends 'blog/base.html' %}
+{% block content %}
+<div class="article">
+    {% if user.is_authenticated and user == article.auteur %}
+    <div class="edit"><a href="{% url 'modifier_article' article.id %}">🖉 </a></div>
+    {% endif %}
+    <p class="infos">Dans {{ article.categorie.nom }}</p>
+    <p class="infos">Rédigé par {{ article.auteur }}, le {{ article.date|date:"DATE_FORMAT" }}</p>
+    <p class="ta">{{ article.titre }}</p>
+    <img id="ai" src="{{ article.photo.url }}"/></p>
+    <p class="contenu">{{ article.contenu|linebreaks }}</p>
+</div>
+{% endblock content %}

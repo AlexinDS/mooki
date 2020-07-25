@@ -1,0 +1,20 @@
+<div class="bar"></div>
+
+<!<section class="cd-intro">
+<!  <h1><!Bienvenue !!!</h1>
+<!</section>
+
+{% extends 'blog/base.html' %}
+{% block content %}
+    {% for article in derniers_articles %}
+    <div class="articleacc">
+        <h3>{{ article.titre }}</h3><br>
+        <p class="da" >{{ article.contenu|truncatewords_html:5 }}</p>
+        <p class="lls"><a href="{% url 'lire' article.id %}">Lire la suite</a></p>
+    </div>
+    {% empty %}
+    <div class="article">
+        <p>Aucun article.</p>
+    </div>
+    {% endfor %}
+{% endblock content %}

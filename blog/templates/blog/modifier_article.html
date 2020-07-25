@@ -1,0 +1,19 @@
+<div class="bar"></div>
+
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class="article">
+{% if user.is_authenticated and user == article.auteur %}
+
+<h3>Ton article</h3>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="sc">Mettre en ligne</button>
+</form>
+{% else %}
+Seul l'auteur peut modifier son article.
+{% endif %}
+</div>
+{% endblock content %}
