@@ -1,20 +1,25 @@
 {% load static %}
-<link rel="shortcut icon" type="image/png" href="{% static 'img/favicon128x128.ico' %}"/>
-<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
-
-<header class="cd-header">
-		<div class="cd-logo"><a href="{% url 'accueil' %}"><img src="{% static 'img/favicon_acc.png' %}" alt="Logo"></a></div>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon128x128.ico' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+    </head>
+<body>
+    <header class="cd-header">
+		<div class="cd-logo"><a href="{% url 'accueil' %}"><img src="{% static 'img/mooki.png' %}" alt="Logo"></a></div>
 
 		<nav>
 			<ul class="cd-secondary-nav">
 				<li>
-{% if user.is_authenticated %}
-<a href="{% url 'deconnexion' %}">Deconnexion</a>
-{% else %}
-<a href="{% url 'connexion' %}">Connexion</a>
-{% endif %}</li>
+                {% if user.is_authenticated %}
+                <a href="{% url 'deconnexion' %}">Deconnexion</a>
+                {% else %}
+                <a href="{% url 'connexion' %}">Connexion</a>
+                {% endif %}</li>
 			</ul>
 		</nav> <!-- cd-nav -->
 
@@ -63,3 +68,5 @@
 
 <script type="text/javascript" src="{% static 'js/jquery-2.1.1.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
