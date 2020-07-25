@@ -1,0 +1,159 @@
+input {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: rgba(153, 204, 255, 0.3);
+  color: white;
+}
+
+#id_categorie {
+  margin: 25px;
+  border: 5px solid;
+  color: white;
+  border-color: #2e4b6d;
+  background-color: #2e4b6d;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+}
+
+.ta {
+  font-size: 30px;
+  text-decoration: underline;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.bar {
+  width: 100%;
+  height: 80px;
+  background-color: #03263d;
+}
+
+.usn {
+  font-size: 25px;
+  color: gray;
+}
+
+.lls{
+  font-size: 15px;
+  width: 30%;
+  height: 3.5%;
+  background-color: #03263d;
+  color: white;
+  text-decoration: none;
+  display: inline;
+  padding: .4em 1em;
+  border-radius: 0.25em;
+  margin: 80px;
+  border-color: #03263d;
+}
+
+.sc{
+  font-size: 15;
+  width: 15%;
+  line-height: 200%;
+  background-color: #03263d;
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+  border-color: #03263d;
+}
+
+.sep {
+  margin: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #03263d;
+  border-radius: 0.25em;
+  padding: 1em 0.25em;
+}
+
+.da {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.article {
+  border-radius: 0.25em;
+  padding: 2em 2em;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 61, 153, 0.3);
+  margin: 20px;
+  resize: none;
+}
+ 
+.articleacc {
+  display: inline-block;
+  border-radius: 0.25em;
+  padding: 2em 2em;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 61, 153, 0.3);
+  margin: 20px;
+  resize: none;
+}
+
+.textarea {
+  font-size: 14px;
+  resize: none;
+  border-style: solid;
+  border-color: #2e4b6d;
+  border-width:10px;
+  color: white;
+  background-color: #2e4b6d;
+}
+
+.article h3 {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.articleacc h3 {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.edit {
+  margin-right: 50px;
+  font-size: 30px;
+  float: right;
+}
+
+.infos {
+  margin-top: 0px;
+  text-align: left;
+}
+
+.contact {
+  border-radius: 0.25em;
+  padding: 2em 1em;
+  font-size: 20px;
+  text-align: left;
+  color: white;
+  background-color: rgba(0, 61, 153, 0.3);
+  margin: 20px;
+}
+
+#ai {
+  max-width: 50%;
+  max-height: 50%;
+  margin: 25px;   
+  filter: invert(0);
+}
+
+@media only screen and (max-width: 768px){
+  .bar {
+    height: 0px;
+  }
+  .lls {
+    height: 7%;
+  }
+}
