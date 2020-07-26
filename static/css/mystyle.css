@@ -152,6 +152,7 @@ input {
 @media only screen and (max-width: 768px){
   .bar {
     height: 0px;
+    margin-bottom: 80px;
   }
   .lls {
     height: 7%;
