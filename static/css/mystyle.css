@@ -121,6 +121,12 @@ input {
   font-weight: bold;
 }
 
+.contenu {
+  text-align: left;
+  margin: 50px;
+  color: white;
+}
+
 .edit {
   margin-right: 50px;
   font-size: 30px;

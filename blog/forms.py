@@ -13,8 +13,8 @@ class ConnexionForm(forms.Form):
     password = forms.CharField(label="Mot de passe", widget=forms.PasswordInput)
 
 class ArticleForm(forms.ModelForm):
-    photo = forms.ImageField()
+ #   photo = forms.ImageField()
     contenu = forms.CharField(widget=forms.Textarea(attrs={'rows': 12, 'cols': 40, 'class': 'textarea'}))
     class Meta:
         model = Article
-        fields = ('titre', 'contenu', 'photo','categorie')
+        fields = ('titre', 'contenu','categorie') #, 'photo'

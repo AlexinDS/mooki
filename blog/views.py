@@ -72,7 +72,7 @@ def test_i18n(request):
 
 def Nouvel_Article(request):
     if request.method == "POST":
-        form = ArticleForm(request.POST or None, request.FILES)
+        form = ArticleForm(request.POST) #or None, request.FILES)
         if form.is_valid():
             article = form.save(commit=False)
             article.auteur = request.user
@@ -86,7 +86,7 @@ def Nouvel_Article(request):
 def Modifier_Article(request, id):
     article = get_object_or_404(Article, id=id)
     if request.method == "POST":
-        form = ArticleForm(request.POST or None, request.FILES, instance=article)
+        form = ArticleForm(request.POST, instance=article) #or None, request.FILES,
         if form.is_valid():
             article = form.save(commit=False)
             article.auteur = request.user
