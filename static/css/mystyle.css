@@ -20,10 +20,12 @@ input {
 }
 
 .ta {
+  text-align: center;
   font-size: 30px;
   text-decoration: underline;
   margin-top: 80px;
   margin-bottom: 50px;
+  font-weight: bold;
 }
 
 .bar {
@@ -72,16 +74,17 @@ input {
 }
 
 .da {
+  text-align:left;
   margin-bottom: 25px;
   font-size: 18px;
 }
 
 .article {
+  text-align: left;
+  font-size: 20px;
+  color: white;
   border-radius: 0.25em;
   padding: 2em 2em;
-  font-size: 20px;
-  text-align: center;
-  color: white;
   background-color: rgba(0, 61, 153, 0.3);
   margin: 20px;
   resize: none;
@@ -99,7 +102,20 @@ input {
   resize: none;
 }
 
+.articlecenter {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  border-radius: 0.25em;
+  padding: 2em 2em;
+  background-color: rgba(0, 61, 153, 0.3);
+  margin: 20px;
+  resize: none;
+}
+
 .textarea {
+  width: 50%;
+  height: 25%;
   font-size: 14px;
   resize: none;
   border-style: solid;
@@ -121,12 +137,6 @@ input {
   font-weight: bold;
 }
 
-.contenu {
-  text-align: left;
-  margin: 50px;
-  color: white;
-}
-
 .edit {
   margin-right: 50px;
   font-size: 30px;
@@ -134,6 +144,8 @@ input {
 }
 
 .infos {
+  font-size: 20px;
+  color: white;
   margin-top: 0px;
   text-align: left;
 }

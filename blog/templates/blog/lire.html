@@ -9,7 +9,7 @@
     <p class="infos">Dans {{ article.categorie.nom }}</p>
     <p class="infos">Rédigé par {{ article.auteur }}, le {{ article.date|date:"DATE_FORMAT" }}</p>
     <p class="ta">{{ article.titre }}</p>
-    <p class="contenu">{{ article.contenu }}</p>
+    <p class="contenu">{{ article.contenu|linebreaks }}</p>
 </div>
 {% endblock content %}
   <!  <img id="ai" src="{{ article.photo.url }}"/><!</p>

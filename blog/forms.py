@@ -14,7 +14,7 @@ class ConnexionForm(forms.Form):
 
 class ArticleForm(forms.ModelForm):
  #   photo = forms.ImageField()
-    contenu = forms.CharField(widget=forms.Textarea(attrs={'rows': 12, 'cols': 40, 'class': 'textarea'}))
+    contenu = forms.CharField(widget=forms.Textarea(attrs={'class': 'textarea'}))
     class Meta:
         model = Article
         fields = ('titre', 'contenu','categorie') #, 'photo'
