@@ -12,7 +12,7 @@
     {% if user.is_authenticated %}
         Vous êtes connecté {{ user.username }} !
         <br>
-        <p class="sep"><a href="{% url 'accueil' %}">>> Retourner à l'accueil <<</a></p>
+        <p class="sep"><a href="{% url 'accueil' %}">Retourner à l'accueil</a></p>
     {% else %}
         <form method="post" action=".">
             {% csrf_token %}
