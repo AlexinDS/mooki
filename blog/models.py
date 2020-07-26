@@ -11,7 +11,7 @@ class Categorie(models.Model):
 
 class Article(models.Model):
     auteur = models.ForeignKey('auth.User', on_delete=models.CASCADE)
-    titre = models.CharField(max_length=200)
+    titre = models.CharField(max_length=15)
     categorie = models.ForeignKey('Categorie', on_delete=models.CASCADE)
 #    photo = models.ImageField(upload_to="photos/")
     contenu = models.TextField()

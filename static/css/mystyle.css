@@ -65,7 +65,7 @@ input {
 }
 
 .sep {
-  margin: 250px;
+  margin: 30%;
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: #03263d;
@@ -172,7 +172,13 @@ input {
     height: 0px;
     margin-bottom: 80px;
   }
-  .lls {
-    height: 7%;
-  }
+  .lls { height: 7%; }
+
+  .sc { width: 50%; }
+
+  .sep { margin: 10%; }
+
+  .textarea { width: 85%; }
+
+  input { width: 75%; }
 }
