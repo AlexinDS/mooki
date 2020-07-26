@@ -77,7 +77,6 @@ def Nouvel_Article(request):
             article = form.save(commit=False)
             article.auteur = request.user
             article.date = timezone.now()
-            article.photo = []
             article.save()
         return render(request, 'accueil.html', {'form': form})
     else:
